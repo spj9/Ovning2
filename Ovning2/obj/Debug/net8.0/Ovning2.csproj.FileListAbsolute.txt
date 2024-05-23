@@ -1,0 +1,15 @@
+E:\Repos\Ovning2\Ovning2\bin\Debug\net8.0\Ovning2.exe
+E:\Repos\Ovning2\Ovning2\bin\Debug\net8.0\Ovning2.deps.json
+E:\Repos\Ovning2\Ovning2\bin\Debug\net8.0\Ovning2.runtimeconfig.json
+E:\Repos\Ovning2\Ovning2\bin\Debug\net8.0\Ovning2.dll
+E:\Repos\Ovning2\Ovning2\bin\Debug\net8.0\Ovning2.pdb
+E:\Repos\Ovning2\Ovning2\obj\Debug\net8.0\Ovning2.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repos\Ovning2\Ovning2\obj\Debug\net8.0\Ovning2.AssemblyInfoInputs.cache
+E:\Repos\Ovning2\Ovning2\obj\Debug\net8.0\Ovning2.AssemblyInfo.cs
+E:\Repos\Ovning2\Ovning2\obj\Debug\net8.0\Ovning2.csproj.CoreCompileInputs.cache
+E:\Repos\Ovning2\Ovning2\obj\Debug\net8.0\Ovning2.sourcelink.json
+E:\Repos\Ovning2\Ovning2\obj\Debug\net8.0\Ovning2.dll
+E:\Repos\Ovning2\Ovning2\obj\Debug\net8.0\refint\Ovning2.dll
+E:\Repos\Ovning2\Ovning2\obj\Debug\net8.0\Ovning2.pdb
+E:\Repos\Ovning2\Ovning2\obj\Debug\net8.0\Ovning2.genruntimeconfig.cache
+E:\Repos\Ovning2\Ovning2\obj\Debug\net8.0\ref\Ovning2.dll
