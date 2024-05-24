@@ -1,12 +1,12 @@
 ﻿// Övning 2
 
-// Skriv ut huvudmenyn med de olika valen
 using System.Security.Cryptography;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
+        // Skriv ut huvudmenyn med de olika valen
         while (true)
         {
             Console.WriteLine(" ");
@@ -40,6 +40,7 @@ internal class Program
             }
         }
         // Skriv ut biljettpriset för det val som gjorts eller anropa metod för felaktig input.
+        // Anges ålder 0 så räknas det som ungdomspris.
         int CheckTicketPrice(string query, bool check)
         {
             while (true)
@@ -81,7 +82,7 @@ internal class Program
                 }
                 else
                 {
-                    PrintInvalidInput("You need to enter a positive integer!");
+                    PrintInvalidInput("Du måste ange ett positivt tal.");
                 }
             }
         }
@@ -115,7 +116,7 @@ internal class Program
             }
         }
 
-        // Repetera 10 gånger
+        // Repetera något 10 gånger
         void PrintTenTimes()
         {
             while (true)
@@ -123,7 +124,7 @@ internal class Program
                 Console.WriteLine("Skriv vad som ska repeteras tio gånger:");
                 string? input = Console.ReadLine();
 
-                // Checka att något verkligen har skrivits som input
+                // Kontrollera att något verkligen har skrivits som input
                 if (input != null && input.Length > 0)
                 {
                     string output = "";
@@ -138,7 +139,7 @@ internal class Program
                 // Skriv en uppmaning till användaren att ange något som ska upprepas
                 else
                 {
-                    PrintInvalidInput("Inget angivet.");
+                    PrintInvalidInput("Du skrev ingenting att upprepa.");
                 }
             }
         }
