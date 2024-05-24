@@ -1,7 +1,5 @@
 ﻿// Övning 2
 
-using System.Security.Cryptography;
-
 internal class Program
 {
     private static void Main(string[] args)
@@ -16,6 +14,7 @@ internal class Program
             Console.WriteLine("1. Biobiljett - pris per person");
             Console.WriteLine("2. Biobiljett - pris för ett sällskap");
             Console.WriteLine("3. Repetera något tio gånger");
+            Console.WriteLine("4. Hitta tredje ordet i en mening");
 
             string? input = Console.ReadLine();
 
@@ -34,13 +33,15 @@ internal class Program
                 case "3":
                     PrintTenTimes();
                     break;
+                case "4":
+                    FindThirdWord();
+                    break;
                 default:
                     PrintInvalidInput(null);
                     break;
             }
         }
         // Skriv ut biljettpriset för det val som gjorts eller anropa metod för felaktig input.
-        // Anges ålder 0 så räknas det som ungdomspris.
         int CheckTicketPrice(string query, bool check)
         {
             while (true)
@@ -115,13 +116,12 @@ internal class Program
                 break;
             }
         }
-
         // Repetera något 10 gånger
         void PrintTenTimes()
         {
             while (true)
             {
-                Console.WriteLine("Skriv vad som ska repeteras tio gånger:");
+                Console.WriteLine("Skriv vad som ska repeteras tio gånger: ");
                 string? input = Console.ReadLine();
 
                 // Kontrollera att något verkligen har skrivits som input
@@ -143,11 +143,30 @@ internal class Program
                 }
             }
         }
-
         // Skriv ut felmeddelande.
         void PrintInvalidInput(string? errorDescription)
         {
             Console.WriteLine($"FEL: {errorDescription ?? ""} Vänligen försök igen!\n");
+        }
+        // Hitta och skriv ut tredje ordet.
+        void FindThirdWord()
+        {
+            while (true)
+            {
+                Console.WriteLine("Vänligen ange en mening med minst tre ord: ");
+                string? input = Console.ReadLine();
+
+                // Kontrollera att minst tre ord skrivits och dela upp strängen på mellanslag för att hitta tredje ordet att skriva ut. 
+                if (input != null && input.Split(" ", StringSplitOptions.RemoveEmptyEntries).Length > 2)
+                {
+                    Console.WriteLine($"Det tredje ordet i meningen är: {input.Split(" ", StringSplitOptions.RemoveEmptyEntries)[2]}");
+                    break;
+                }
+                else
+                {
+                    PrintInvalidInput("Du måste ange minst tre ord.");
+                }
+            }
         }
     }
 }
